@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special 💖</title>
+
+    <style>
+        :root {
+            --pink: #ff7eb3;
+            --soft: #ffc2d1;
+            --dark: #0b0b0f;
+            --glass: rgba(255, 255, 255, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: radial-gradient(circle at top, #1b1b2f, #050508);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* ---------- GLOBAL ---------- */
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card {
+            max-width: 720px;
+            width: 100%;
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            border-radius: 28px;
+            padding: 50px;
+            box-shadow: 0 0 80px rgba(255, 126, 179, 0.15);
+            animation: fadeUp 1.4s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            color: var(--pink);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: 300;
+            color: #ddd;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* ---------- BUTTON ---------- */
+
+        .btn {
+            margin-top: 35px;
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, var(--pink), var(--soft));
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 0 30px rgba(255, 126, 179, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px rgba(255, 126, 179, 0.6);
+        }
+
+        /* ---------- PAGE 1 ---------- */
+
+        .hero-heart {
+            font-size: 3rem;
+            animation: pulse 1.8s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* ---------- PAGE 2 ---------- */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 18px;
+            filter: brightness(0.9);
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            filter: brightness(1.1);
+        }
+
+        /* ---------- PAGE 3 ---------- */
+
+        .cake {
+            font-size: 4rem;
+            margin: 20px 0;
+            animation: float 2.2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-14px);
+            }
+        }
+
+        .signature {
+            margin-top: 35px;
+            font-size: 0.95rem;
+            color: #aaa;
+        }
+
+        /* ---------- STARS ---------- */
+
+        .stars {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            opacity: 0.6;
+            animation: twinkle 5s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACKGROUND STARS -->
+    <div class="stars">
+        <script>
+            for (let i = 0; i < 120; i++) {
+                document.write(`<div class="star" style="
+                top:${Math.random() * 100}%;
+                left:${Math.random() * 100}%;
+                animation-delay:${Math.random() * 5}s"></div>`);
+            }
+        </script>
+    </div>
+
+    <!-- PAGE 1 -->
+    <section id="page1">
+        <div class="card">
+            <div class="hero-heart">💖</div>
+            <h1>Hellow My Sweet Heart 💖 ✨</h1>
+            <h2>This Is Just For You My BiYYa </h2>
+            <p>
+                It’s a small digital universe created with one intention —
+                to make you feel special, appreciated, and genuinely smiled at 💫
+                Take a breath… and let me show you something.
+            </p>
+            <a href="#page2" class="btn">Continue 💕</a>
+        </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section id="page2">
+        <div class="card">
+            <h1>About You 🌙</h1>
+            <p>
+                You have this quiet magic — the kind that doesn’t shout,
+                but softly changes the mood.
+                Your smile, your presence, your existence…
+                they matter more than you realize And I know How much You Love Me and you Also know My love 💗
+            </p>
+
+            <div class="gallery">
+                <img src="img1.jpeg">
+                <img src="Main.jpeg">
+                <img src="img5.jpeg">
+            </div>
+
+            <a href="#page3" class="btn">One Last Thing 🎂</a>
+        </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section id="page3">
+        <div class="card">
+            <h1>Happy Birthday 🎉</h1>
+            <h2>Today is yours meri Shezadi</h2>
+
+            <div class="cake">🎂✨</div>
+
+            <p>
+                 Ap Naraz Thyien NA kal Isliyen Socha Thora Change Wish Krta Hun Jis say Apka Mood Change Hojaye MEri JAn 
+            </p>
+
+            <div class="signature">
+                Apka Apna (Kaxhi)<br>
+               Love you Soo Much JAnn💌
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
